@@ -379,6 +379,23 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe-foot-form">
+          <p class="subscribe-title">Subscribe</p>
+          <form class="subscribe-form">
+            <input
+              class="input-window"
+              type="email"
+              name="user-email"
+              placeholder="E-mail"
+            />
+            <button class="subscribe-btn" type="submit">
+              Subscribe
+              <svg class="send-icon" width="24" height="20">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -388,6 +405,38 @@
             <use href="./images/icons.svg#icon-Vector"></use>
           </svg>
         </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <label class="modal-label" for="name">Name</label>
+        <div class="modal-field">
+          <input class="modal-window" id="name" type="text" />
+          <svg class="modal-logo" width="18" height="18">
+            <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+          </svg>
+        </div>
+        <label class="modal-label" for="phone">Phone</label>
+        <div class="modal-field">
+          <input class="modal-window" id="phone" type="tel" />
+          <svg class="modal-logo" width="18" height="24">
+            <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+          </svg>
+        </div>
+        <label class="modal-label" for="mail">Email</label>
+        <div class="modal-field">
+          <input class="modal-window" id="mail" type="text" />
+          <svg class="modal-logo" width="18" height="24">
+            <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+          </svg>
+        </div>
+        <label class="modal-label" for="text-area">Comment</label>
+        <textarea
+          class="modal-message"
+          name="Comment"
+          id="text-area"
+          cols="30"
+          rows="10"
+        >
+Text input</textarea
+        >
       </div>
     </div>
     <script src="./js/modal.js"></script>

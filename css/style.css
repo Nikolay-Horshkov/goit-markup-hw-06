@@ -558,6 +558,7 @@ img {
   height: 40px;
   padding: 8px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
+  outline: transparent;
   border-radius: 4px;
   background-color: transparent;
 }
@@ -625,6 +626,7 @@ img {
 }
 .close-button {
   margin-left: auto;
+  margin-bottom: 24px;
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -645,4 +647,44 @@ img {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+}
+.modal-title {
+  margin-bottom: 34px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+.modal-window {
+  width: 360px;
+  height: 40px;
+  border: 1px solid #4d5ae5;
+  border-radius: 4px;
+}
+.modal-message {
+  width: 360px;
+  height: 120px;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: rgba(117, 117, 117, 0.5);
+  resize: none;
+  padding: 8px 16px;
+}
+.modal-label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #8e8f99;
+}
+.modal-field {
+  position: relative;
+  margin-bottom: 8px;
+}
+.modal-logo {
+  position: absolute;
+  left: 19px;
+  top: 50%;
+  transform: translateY(-50%);
 }
