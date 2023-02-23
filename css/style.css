@@ -659,32 +659,98 @@ img {
 .modal-window {
   width: 360px;
   height: 40px;
-  border: 1px solid #4d5ae5;
   border-radius: 4px;
+  outline: transparent;
+  padding-left: 38px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+.modal-window:focus {
+  border: 1px solid var(--primaryBrand-color);
+}
+.modal-window:focus + .modal-logo {
+  fill: var(--primaryBrand-color);
 }
 .modal-message {
+  margin-bottom: 16px;
   width: 360px;
   height: 120px;
   font-size: 12px;
   line-height: 1.2;
   letter-spacing: 0.04em;
-  color: rgba(117, 117, 117, 0.5);
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  outline: transparent;
   resize: none;
   padding: 8px 16px;
+}
+.modal-message:focus {
+  border-color: var(--primaryBrand-color);
 }
 .modal-label {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  color: #8e8f99;
+  color: var(--subtle-text-color);
 }
 .modal-field {
   position: relative;
   margin-bottom: 8px;
+}
+.modal-policy-field {
+  display: flex;
 }
 .modal-logo {
   position: absolute;
   left: 19px;
   top: 50%;
   transform: translateY(-50%);
+}
+.label-policy {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: flex-end;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #757575;
+}
+.label-policy span {
+  fill: transparent;
+  border: 1.25px solid var(--dark-color);
+  border-radius: 2px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-policy:checked + .label-policy span {
+  fill: #fff;
+  border: none;
+  background-color: var(--pressed-state-color);
+}
+.submit-about {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background-color: var(--primaryBrand-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  width: 169px;
+  height: 56px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.submit-about:is(:focus, :hover) {
+  background-color: var(--pressed-state-color);
 }
