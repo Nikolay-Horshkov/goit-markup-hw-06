@@ -564,6 +564,7 @@ img {
 }
 .input-window:focus {
   border-color: var(--primaryBrand-color);
+  color: #f4f4fd;
 }
 .subscribe-btn {
   display: flex;
